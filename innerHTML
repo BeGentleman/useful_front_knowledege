@@ -1,1 +1,20 @@
-# TODO
+0x00 innerHTML是什么？
+     是JS中用来获取对象内容或者赋予对象内容的一种方式。
+
+0x01 举例子说明：
+     实现在输入框中输入数据的同时，同步在一个<p>的效果。
+     <html>
+     <head><title>测试输入框同步</title></head>
+
+     <body>
+     <input id="shurukuang1"  oninput="tongbu()">
+     <p id="duanluo1"></p>
+
+     <script>
+     function tongbu(){
+         var input_value = document.getElementById("shurukuang1").value;
+         document.getElementById("duanluo1").innerHTML = input_value;
+     }
+     </script>
+     </body>
+     </html>
