@@ -1,2 +1,37 @@
 0x00 实现代码
-     # TODO
+
+<html>
+<head><title>JS点击按钮，创建嵌套div，并在div中创建内容</title></head>
+
+<body>
+<p>说明：</p>
+<p>点击点我按钮，会在space1中创建一个div space2,class 叫做space_2_class</p>
+<p>并在div space2下，创建一个div space3,id 叫做space_3_id </p>
+<p>然后在div space3中创建一个文本框</p>
+
+<div id = "space1">
+<button id="divmaker" onclick="divmaker()">点我</button>
+</div>
+
+<script>
+    function divmaker(){
+        // 先获取最外层的div id
+        var space1 = document.getElementById("space1");
+        // 在创建一个div space2，定义div space2的class为space_2_class
+        var space2 = document.createElement("div");
+        space2.className = "space_2_class";
+        // 然后创建一个div space3，定义div space3的id为space_3_id
+        var space3 = document.createElement("div");
+        space3.id = "space_3_id";
+        // 将div space2当作div space1的孩子;将div space3当作div space2的孩子
+        space1.appendChild(space2);
+        space2.appendChild(space3);
+        // 创建一个文本框，并把它作为div space3的孩子
+        var text_space = document.createElement("input");
+        space3.appendChild(text_space);
+    }
+
+</script>
+</body>
+
+</html>
