@@ -1,2 +1,5 @@
 0x00 实现
       <select onchange="this.form.submit()">
+
+0x01 注意
+     假如创建了三个选项，因为用了onchange，所以第一个选项不生效，要加一个默认的选项，才能让第一个选项有效
