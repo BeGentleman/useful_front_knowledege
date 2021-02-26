@@ -1,0 +1,27 @@
+http协议
+
+header：post,get,del,put 7中
+
+（api用post,get,del,put这四种）
+（web用pos，get这两种）
+80端口
+get不能放东西
+
+ path是有一个层级结构的
+query 样式  是用一个问号，问号 是一个filter
+
+body
+	form
+	json
+	等
+
+
+一般而言：指示性的东西放在header中
+		数据放在body中
+
+
+https只是比http多了一个ssl
+
+443端口
+
+# TODO
